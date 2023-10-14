@@ -58,7 +58,7 @@ $(document).ready(function () {
         rules: {
             register_full_name: {
                 required: true,
-                maxlength: 25
+                maxlength: 50
             },
             register_phone: {
                 required: true,
@@ -66,8 +66,7 @@ $(document).ready(function () {
             },
             register_email: {
                 required: true,
-                email: true,
-                maxlength: 25
+                email: true
             },
             register_password: {
                 required: true,
@@ -82,7 +81,7 @@ $(document).ready(function () {
         messages: {
             register_full_name: {
                 required: "Vui lòng nhập đầy đủ họ và tên!",
-                maxlength: "Tên có độ dài tối đa 25 ký tự!",
+                maxlength: "Tên có độ dài tối đa 50 ký tự!",
 
             },
             register_phone: {

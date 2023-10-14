@@ -26,6 +26,7 @@ public class CreateUserRequest {
     @NotBlank(message = "Mật khẩu trống")
     @Size(min = 6,max = 20, message = "Mật khẩu phải chứa từ 6-20 ký tự")
     private String password;
+    private String rewritePassword;
 
     @Pattern(regexp="(84|0[3|5|7|8|9])+([0-9]{8})\\b",message = "Số điện thoại không hợp lệ!")
     private String phone;

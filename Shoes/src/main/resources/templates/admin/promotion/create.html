@@ -10,7 +10,7 @@
                                                )}">
 <head>
     <meta charset="UTF-8">
-    <title>Thêm sản khuyến mại</title>
+    <title>Thêm khuyến mại</title>
     <th:block id="css-resources">
         <link rel="stylesheet" th:href="@{/adminlte/pagination/simplePagination.css}">
         <style>
@@ -65,12 +65,12 @@
                             <div class="card-body pad promotion-box">
                                 <div class="form-group">
                                     <div>
-                                         <span style="color:red">(Mã kích hoạt chỉ bao gồm ký tự
+                                         <span style="color:red">(Mã khuyến mãi chỉ bao gồm ký tự
                                         viết hoa từ A-Z và số từ 0-9 và dấu gạch ngang (độ dài từ 4 - 16 ký tự)]</span>
                                         <br>
                                         <label class="required-label" for="code">Mã code</label>
 
-                                        <span class="invalid-feedback" id="invalid-feedback-code">Mã kích hoạt không hợp lệ</span>
+                                        <span class="invalid-feedback" id="invalid-feedback-code">Mã khuyến mãi không hợp lệ</span>
                                     </div>
                                     <input type="text" class="form-control" id="code">
                                 </div>
@@ -162,7 +162,6 @@
                 $('#invalid-feedback-name').show();
                 isValid = false;
             }
-
             if (discountType === 1) {
                 if (discountValue < 0 || discountValue > 100) {
                     $('#invalid-feedback-discount-value').show();
